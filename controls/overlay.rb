@@ -33,11 +33,6 @@ include_controls 'crunchy-data-postgresql-stig-baseline' do
     This requirement is applicable to access control enforcement applications, a category that includes database management systems. If PostgreSQL does not follow applicable policy when approving access, it may be in conflict with networks or other applications in the information system. This may result in users either gaining or being denied access inappropriately and in conflict with applicable policy.'
   end
 
-  control 'V-233522' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-
   control "V-233523" do
     impact 0.0
     desc 'caveat', 'This is Not Applicable since the related security control is not included in CMS ARS 3.1'
@@ -46,11 +41,6 @@ include_controls 'crunchy-data-postgresql-stig-baseline' do
   control "V-233530" do
     impact 0.0
     desc 'caveat', 'This is Not Applicable since the related security control is not included in CMS ARS 3.1'
-  end
-  
-  control 'V-233535' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
   end
   
   control "V-233539" do
@@ -78,21 +68,6 @@ include_controls 'crunchy-data-postgresql-stig-baseline' do
     desc 'caveat', 'This is Not Applicable since the related security control is not included in CMS ARS 3.1'
   end
   
-  control 'V-233545' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-  
-  control 'V-233546' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-  
-  control 'V-233547' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-
   control "V-233550" do
     impact 0.0
     desc 'caveat', 'This is Not Applicable since the related security control is not included in CMS ARS 3.1'
@@ -188,20 +163,8 @@ include_controls 'crunchy-data-postgresql-stig-baseline' do
     In such cases, database passwords stored in clear text, using reversible encryption, or using unsalted hashes would be vulnerable to unauthorized disclosure. Database passwords must always be in the form of one-way, salted hashes when stored internally or externally to PostgreSQL.'
   end
 
-  control 'V-233597' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-  
-  control 'V-233598' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-  
   control 'V-233599' do
     title 'The system must provide a warning to appropriate support staff when allocated audit record storage volume reaches 80% of maximum audit record storage capacity.'
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
     desc 'Organizations are required to use a central log management system, so, under normal conditions, the audit space allocated to PostgreSQL on its own server will not be an issue. However, space will still be required on PostgreSQL server for audit records in transit, and, under abnormal conditions, this could fill up. Since a requirement exists to halt processing upon audit failure, a service outage would result.
 
     If support personnel are not notified immediately upon storage volume utilization reaching 80%, they are unable to plan for storage capacity expansion. 
@@ -243,14 +206,7 @@ include_controls 'crunchy-data-postgresql-stig-baseline' do
     
   end
   
-  control 'V-233600' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
-  end
-
   control 'V-233601' do
-    impact 0.0
-    desc 'caveat', 'This is Not Applicable since the related security control is not applied to this system categorization in CMS ARS 3.1'
     desc 'The CMS standard for authentication of an interactive user is the presentation of a Personal Identity Verification (PIV) Card or other physical token bearing a valid, current, CMS-issued Public Key Infrastructure (PKI) certificate, coupled with a Personal Identification Number (PIN) to be entered by the user at the beginning of each session and whenever reauthentication is required.
 
     Without reauthentication, users may access resources or perform tasks for which they do not have authorization.
